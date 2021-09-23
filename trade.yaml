@@ -1,0 +1,41 @@
+accounts:
+  - account_id: '2048246272'
+    name: 'regular'
+    currencies:
+      - RUB
+    cash_override:
+      RUB: null
+  - account_id: '2046650780'
+    name: 'iis'
+    currencies:
+      - EUR
+    cash_override:
+      EUR: null
+
+# update_rates are read once
+currencies:
+  - currency: RUB
+    update_rates: [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ]
+  - currency: EUR
+    update_rates: [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ]
+  - currency: USD
+    # priority_description
+    update_rates:
+      - 1.0     # top_tickers
+      - 1.0     # top_10_pos_score
+      - 0.5     # top_40_pos_score
+      - 0.25    # positive
+      - 0.125   # top_10_neg_score
+      - 0.0625  # top_40_neg_score
+      - 0.03125 # worse
+
+pause: false
+
+# disabled_tickers are read once and then updated in memory
+disabled_tickers:
+  - TCSG
+  - TGKDP
+  - TORS
+  - RBCM
+  - MSTT
+  - UNAC
