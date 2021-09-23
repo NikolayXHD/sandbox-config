@@ -4,7 +4,7 @@ accounts:
     currencies:
       - RUB
     cash_override:
-      RUB: null
+      RUB: 0.0
   - account_id: '2046650780'
     name: 'iis'
     currencies:
