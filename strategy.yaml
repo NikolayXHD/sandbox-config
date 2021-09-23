@@ -1,0 +1,10 @@
+greediness_buy: 5.0
+greediness_sell: 11.0
+exp_s: 2.0
+memory: 48
+patience: 4.0
+cash_reserve: 0.1
+sell_aggression: 'No'
+short_min: -0.05
+short_avg_window: 24
+max_listing_level: 0
