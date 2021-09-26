@@ -1,6 +1,6 @@
 greediness_buy: 5.0
 greediness_sell: 11.0
-exp_s: 2.0
+exp_s: 1.5
 memory: 48
 patience: 4.0
 cash_reserve: 0.1
